@@ -7,6 +7,7 @@ services:
       - 5566:5432
     env_file:
       - back-end/.env.test
+      
 
   node_app_github-ci:
     container_name: node_app_github-ci
