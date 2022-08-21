@@ -20,7 +20,6 @@ services:
     env_file:
       - back-end/.env.test
 
-
   react_app:
     container_name: react_app
     build: ./front-end
@@ -38,7 +37,6 @@ services:
       - drivenopsdb
       - node_app_github-ci
       - react_app
-
 
 volumes:
   pg:
