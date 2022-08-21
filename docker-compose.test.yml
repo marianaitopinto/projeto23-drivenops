@@ -5,7 +5,7 @@ services:
     container_name: drivenopsdb
     restart: always
     ports:
-      - 5566:5432
+      - 2345:5432
     env_file:
       - back-end/.env.test
 

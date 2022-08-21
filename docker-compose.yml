@@ -4,7 +4,7 @@ services:
     container_name: drivenopsdb
     restart: always
     ports:
-      - 5566:5432
+      - 2345:5432
     env_file:
       - back-end/.env.test
     volumes:
@@ -14,7 +14,7 @@ services:
     container_name: node_app_github-ci
     build: ./back-end/.
     ports:
-      - 5000:5000
+      - 80:5000
     depends_on:
       - drivenopsdb
     env_file:
