@@ -10,7 +10,6 @@ services:
     volumes:
       - pg:/var/lib/postgresql/data
 
-
   node_app_github-ci:
     container_name: node_app_github-ci
     build: .
@@ -22,4 +21,4 @@ services:
       - back-end/.env.test
 
 volumes:
-  pg
+  pg:
