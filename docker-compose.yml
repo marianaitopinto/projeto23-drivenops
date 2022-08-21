@@ -39,7 +39,6 @@ services:
       - node_app_github-ci
       - react_app
 
-
 volumes:
   pg:
   nginx_react:
